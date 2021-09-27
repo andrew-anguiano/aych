@@ -1,0 +1,16 @@
+<main id="sheet">
+  <div class="columns">
+    <div class="column is-one-third">
+      <figure class="image is-square">
+        <img src="https://placekitten.com/g/300/300" />
+      </figure>
+      <h1 class="title is-uppercase"><%= @character.name %></h1>
+    </div>
+    <div class="column">
+        <div class="container">
+          <.ability_scores character={@character} />
+        </div>
+        <.tabs tabs={@tabs} active_tab={@active_tab} />
+    </div>
+  </div>
+</main>
